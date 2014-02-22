@@ -18,16 +18,24 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-				<action android:name="android.intent.action.VIEW"/>
+				
                 <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:scheme="http"/>
+               
             </intent-filter>
   
             <!-- TODO - Add necessary intent filter information so that this
             			    Activity will accept Intents with the 
             			    action "android.intent.action.VIEW" and with an "http" 
             			    schemed URL -->
+            <intent-filter >
+                <!-- Tells this activity can respond to this action, which is to view BROWSER URLS -->
+                <action android:name="android.intent.action.VIEW"/> 
+                <!-- Tells this activity can be opened by implicit intents -->
+                 <category android:name="android.intent.category.DEFAULT"/>
+                 <!-- I don't know what data scheme's for. -->
+                <data android:scheme="http"/>
+                
+            </intent-filter>
             			   
         </activity>
     </application>

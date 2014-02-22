@@ -26,7 +26,7 @@ public class ActivityLoaderActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_loader_activity);
-		
+		//Log.i(TAG, "Opened app!");
 		// Get reference to the textView
 		mUserTextView = (TextView) findViewById(R.id.textView1);
 
@@ -106,7 +106,8 @@ public class ActivityLoaderActivity extends Activity {
 		// RESULT_OK result code and a recognized request code
 		// If so, update the Textview showing the user-entered text.
 		if (requestCode == GET_TEXT_REQUEST_CODE && resultCode == RESULT_OK ){
-			mUserTextView.setText(data.getDataString());
+			//Log.i(TAG,"RESULT OK - Text Updated!");
+			mUserTextView.setText(data.getStringExtra(Intent.EXTRA_TEXT));
 		}
 
 

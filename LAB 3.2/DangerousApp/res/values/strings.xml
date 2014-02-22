@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DangerousApp</string>
+    <string name="hello_world">You have opened a dangerous activity</string>
+    <string name="boom_permission_label_string">Dangerous Activity</string>
+    <string name="boom_perm_string">This is a very dangerous activity. Make sure you know the provider.</string>
+
+</resources>
